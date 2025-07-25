@@ -1,0 +1,21 @@
+# Python virtual environment (uv)
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Generated vector database
+faiss_index/
+
+# IDE and editor specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

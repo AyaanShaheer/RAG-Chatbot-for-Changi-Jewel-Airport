@@ -1,0 +1,21 @@
+# requirements.txt
+
+# For web scraping and data processing
+requests
+beautifulsoup4
+
+# Core LLM and vector store libraries
+langchain
+langchain-community
+sentence-transformers
+faiss-cpu
+langchain-huggingface
+langchain-google-genai
+gradio
+
+# For serving the API
+fastapi
+uvicorn[standard]
+
+# For managing environment variables
+python-dotenv
