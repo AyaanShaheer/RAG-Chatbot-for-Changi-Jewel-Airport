@@ -1,26 +1,15 @@
-# requirements.txt
-
-# For web scraping and data processing
+numpy==1.26.4
 requests
 beautifulsoup4
-
-# Core LLM and vector store libraries
 langchain
 langchain-community
 sentence-transformers
-# faiss-cpu  <-- Make sure this line is removed or commented out
 langchain-huggingface
 langchain-google-genai
 gradio
-
-# For serving the API
 fastapi
 uvicorn[standard]
-
-# For managing environment variables
 python-dotenv
-
-# Lighter, CPU-only versions for deployment to fix memory issues
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.3.1
 torchvision==0.18.1
