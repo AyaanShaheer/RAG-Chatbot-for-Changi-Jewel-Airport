@@ -8,7 +8,7 @@ beautifulsoup4
 langchain
 langchain-community
 sentence-transformers
-faiss-cpu
+# faiss-cpu  <-- Make sure this line is removed or commented out
 langchain-huggingface
 langchain-google-genai
 gradio
@@ -19,3 +19,9 @@ uvicorn[standard]
 
 # For managing environment variables
 python-dotenv
+
+# Lighter, CPU-only versions for deployment to fix memory issues
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.3.1
+torchvision==0.18.1
+faiss-cpu==1.8.0
